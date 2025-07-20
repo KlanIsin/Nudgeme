@@ -1,0 +1,95 @@
+{
+  "name": "nudgeme",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "pwa:build": "vite build && workbox generateSW",
+    "pwa:dev": "vite --mode pwa",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@tabler/icons-react": "^2.47.0",
+    "react-window": "^1.8.9",
+    "react-window-infinite-loader": "^1.0.9",
+    "crypto-js": "^4.2.0",
+    "lodash.debounce": "^4.0.8",
+    "lodash.throttle": "^4.1.1",
+    "date-fns": "^3.3.1",
+    "react-hotkeys-hook": "^4.4.1",
+    "react-swipeable": "^7.0.1",
+    "react-intersection-observer": "^9.8.0",
+    "react-virtualized-auto-sizer": "^1.0.20",
+    "react-use": "^17.5.0",
+    "zustand": "^4.5.0",
+    "immer": "^10.0.3",
+    "nanoid": "^5.0.4",
+    "clsx": "^2.1.0",
+    "tailwind-merge": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@types/crypto-js": "^4.2.1",
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/lodash.throttle": "^4.1.7",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-pwa": "^0.17.4",
+    "workbox-webpack-plugin": "^7.0.0",
+    "vitest": "^1.1.0",
+    "@vitest/ui": "^1.1.0",
+    "@vitest/coverage-v8": "^1.1.0",
+    "jsdom": "^23.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "adhd",
+    "productivity",
+    "focus",
+    "pwa",
+    "react",
+    "typescript",
+    "virtualization",
+    "offline-first"
+  ],
+  "author": "NudgeMe Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nudgeme/nudgeme-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nudgeme/nudgeme-app/issues"
+  },
+  "homepage": "https://nudgeme.app"
+}
